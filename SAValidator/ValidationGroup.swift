@@ -12,9 +12,9 @@ import UIKit
 open class ValidationGroup {
     public var validators = [Validator]()
     
-    var successBlock = {}
+    public var successBlock = {}
     
-    var failureBlock : ([(Validator, Bool)])->() = {_ in }
+    public var failureBlock : ([(Validator, Bool)])->() = {_ in }
     
     convenience public init(validators: [Validator] = [Validator](),
                             onSuccess:@escaping ()->(),
