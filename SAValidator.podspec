@@ -33,14 +33,14 @@ s.author = { "Sebastian Aguirre" => "osebas15@gmail.com" }
 s.homepage = "https://github.com/osebas15"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/osebas15/Beat.git",
+s.source = { :git => "https://github.com/osebas15/SAValidator.git",
 :tag => "#{s.version}" }
 
 # 7
 s.framework = "Foundation"
 
 # 8
-s.source_files = "Beat/**/*.{swift}"
+s.source_files = "SAValidator/**/*.{swift}"
 
 # 10
 s.swift_version = "4.0"
