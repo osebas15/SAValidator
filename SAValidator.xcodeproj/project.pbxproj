@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9EBE914C213311F6005D88ED /* SAValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EBE914A213311F6005D88ED /* SAValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EBE9157213338AB005D88ED /* ValidationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE9156213338AB005D88ED /* ValidationGroup.swift */; };
+		9EBE915B21333961005D88ED /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE915A21333961005D88ED /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EBE9147213311F6005D88ED /* SAValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBE914A213311F6005D88ED /* SAValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAValidator.h; sourceTree = "<group>"; };
 		9EBE914B213311F6005D88ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EBE9156213338AB005D88ED /* ValidationGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationGroup.swift; sourceTree = "<group>"; };
+		9EBE915A21333961005D88ED /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				9EBE914A213311F6005D88ED /* SAValidator.h */,
+				9EBE915A21333961005D88ED /* Validator.swift */,
+				9EBE9156213338AB005D88ED /* ValidationGroup.swift */,
 				9EBE914B213311F6005D88ED /* Info.plist */,
 			);
 			path = SAValidator;
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					9EBE9146213311F6005D88ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBE915B21333961005D88ED /* Validator.swift in Sources */,
+				9EBE9157213338AB005D88ED /* ValidationGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +268,7 @@
 		9EBE9150213311F6005D88ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SA.SAValidator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		9EBE9151213311F6005D88ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
